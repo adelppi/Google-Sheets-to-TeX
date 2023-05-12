@@ -1,5 +1,4 @@
 import streamlit as st
-import pyperclip
 
 st.title("スプレッドシートをTeXの表形式に変換できるマシン")
 
@@ -15,11 +14,6 @@ for i in range(1, rows):
     result += raw[i]
 
 result = result + r" \hline \end{tabular} \end{center} \end{table}"
-# st.write(result)
+st.write(result)
 if st.button('Texに変換'):
-    pyperclip.copy(result.replace("\\\\", "\\"))
-    # pass
-
-# rawTable = input()
-
-# print(rawTable.split("\n"))
+    pass
