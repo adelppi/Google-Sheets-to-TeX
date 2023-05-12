@@ -14,6 +14,7 @@ for i in range(1, rows):
     result += raw[i]
 
 result = result + r" \hline \end{tabular} \end{center} \end{table}"
-st.write(result)
 if st.button('Texに変換'):
     pass
+st.text("↓↓↓このテキストをコピーしてTeXファイルに貼り付ける↓↓↓")
+st.write(result)
